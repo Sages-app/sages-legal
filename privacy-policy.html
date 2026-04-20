@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Sages</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --accent-gold: #C5A059;
+            --text-primary: #E0DCD0;
+            --text-secondary: rgba(224, 220, 208, 0.7);
+            --border-color: rgba(197, 160, 89, 0.2);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 60px 24px;
+            text-align: left;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        /* Updated container for the logo */
+        .logo-placeholder {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 24px;
+            border-radius: 50%;
+            /* Ensure the container clips the image to a circle */
+            overflow: hidden;
+            /* We no longer need flex centering because the image will fill the space */
+            display: block;
+        }
+
+        /* Ensure the image fills the container completely */
+        img.logo-placeholder {
+            /* object-fit: cover ensures the image aspect ratio is maintained 
+       while filling the space. Parts might be clipped by the circle. */
+            object-fit: cover;
+            /* Important: Remove border-radius here, the container handles it now via overflow */
+            border-radius: 0;
+        }
+
+        h1 {
+            font-family: 'EB Garamond', serif;
+            font-size: 36px;
+            color: var(--text-primary);
+            margin: 0;
+            letter-spacing: 0.05em;
+        }
+
+        .last-updated {
+            color: var(--accent-gold);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 12px;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: var(--text-primary);
+            font-style: italic;
+            font-family: 'EB Garamond', serif;
+            border-left: 2px solid var(--accent-gold);
+            padding-left: 24px;
+            margin-bottom: 60px;
+        }
+
+        section {
+            margin-bottom: 48px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        h2 {
+            font-family: 'EB Garamond', serif;
+            color: var(--accent-gold);
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        p,
+        li {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .contact-box {
+            background: rgba(197, 160, 89, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 24px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="sages_logo.png" alt="Sages Logo" class="logo-placeholder">
+            <h1>Privacy Policy for Sages</h1>
+            <div class="last-updated">Last Updated: April 2026</div>
+        </header>
+
+        <div class="intro">
+            Welcome to Sages. Your privacy is a cornerstone of our Covenant. This Privacy Policy explains how we
+            collect, use, and protect your information when you interact with our Council of Great Minds.
+        </div>
+
+        <section>
+            <h2>1. The Controller</h2>
+            <p>Sages is operated by an individual developer. For any inquiries regarding your data or this policy,
+                please contact us at:</p>
+            <div class="contact-box">
+                <strong>sages.app.support@gmail.com</strong>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Data We Collect</h2>
+            <p>We collect only the information necessary to provide you with the Sages experience:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Your name and email address provided during registration
+                    (handled via Supabase).</li>
+                <li><strong>Interaction Data:</strong> The text of your "Dialogues" (chat history) with the AI Sages is
+                    stored so you can resume your conversations across sessions.</li>
+                <li><strong>Payment Data:</strong> In the future, transactions will be handled exclusively by Apple App
+                    Store and Google Play Store billing systems. We do not store credit card details on our servers.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Use Your Data</h2>
+            <p>Your data is used to:</p>
+            <ul>
+                <li>Authenticate your access to the Council.</li>
+                <li>Maintain your personal "Council History" and chat continuity.</li>
+                <li><strong>Future AI Development:</strong> We may use anonymized interaction data to improve the
+                    "wisdom" and accuracy of our models. If we do this, personal identifiers (like your name or email)
+                    will be stripped from the data.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Third-Party Sentries</h2>
+            <p>To bring the Great Minds to life, we share the text of your prompts (but not your name or email) with
+                OpenAI or Google Gemini. Their use of your data is governed by their own privacy standards. We do not
+                use third-party analytics or tracking tools at this time.</p>
+        </section>
+
+        <section>
+            <h2>5. Data Retention & Deletion</h2>
+            <ul>
+                <li><strong>Retention:</strong> We retain your data as long as your account is active.</li>
+                <li><strong>Deletion:</strong> You have the right to depart the Council at any time. You can initiate a
+                    permanent account deletion within the App Settings. Upon deletion, your email, name, and all chat
+                    history will be wiped from our primary database.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Children’s Privacy</h2>
+            <p>Sages is not intended for children under the age of 13. We do not knowingly collect data from anyone
+                under this age. If we discover such data has been collected, it will be deleted immediately.</p>
+        </section>
+
+        <section>
+            <h2>7. Changes to the Covenant</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
+                policy within the app.</p>
+        </section>
+
+        <footer>
+            &copy; 2026 SAGES. ALL RIGHTS RESERVED.
+        </footer>
+    </div>
+</body>
+
+</html>
